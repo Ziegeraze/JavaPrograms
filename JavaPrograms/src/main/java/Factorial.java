@@ -2,16 +2,17 @@ public class Factorial {
     static int ans = 1, aux;
 
     public static void main(String[] args) {
-        checkFactorial(5);
+        System.out.println(checkFactorial(5));
         checkFactorialRecursive(4);
     }
 
-    static void checkFactorial(int n) {
+    static int checkFactorial(int n) {
         int ans = 1;
         while (n > 0) {
             ans *= n--;
         }
-        System.out.println(ans);
+
+        return ans;
     }
 
     static void checkFactorialRecursive(int n) {
